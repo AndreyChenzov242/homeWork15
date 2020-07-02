@@ -5140,7 +5140,6 @@ article {
   align-items: center;
   justify-content: space-between;
   margin: 60px auto;
-  padding: 15px;
 }
 
 .copyright-text {
@@ -5157,10 +5156,26 @@ article {
   .main-btn {
     width: 90%;
   }
+
+  .scroll {
+    display: none;
+  }
+
+  .intro-wrap {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 415px) {
+  .intro__h1 {
+    font-size: 48px;
+  }
+
   .wrap::before, .wrap::after {
     width: 7%;
+  }
+
+  .copyright-wrap {
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
