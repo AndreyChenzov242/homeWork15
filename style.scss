@@ -1,0 +1,260 @@
+@import 'bootstrap/scss/bootstrap-grid.scss';
+@import 'bootstrap/scss/utilities/flex';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#ourWorks{
+    padding-bottom: 110px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.works-wrap {
+    min-height: 1200px;
+    margin-top: 100px;
+}
+
+.wrap {
+    border: 2px solid #393939;
+    border-top: none;
+    text-align: center;
+    position: relative;
+    color: #393939;
+    flex-grow: 1;
+    padding-bottom: 30px;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.160em;
+    position: relative;
+    top: -0.6em;
+    font-size: 34px;
+    margin: 0;
+}
+
+.wrap::before {
+    content: "";
+    display: block;
+    width: 26.7%;
+    height: 2px;
+    background-color: #393939;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+}
+
+.wrap::after {
+    content: "";
+    display: block;
+    width: 26.7%;
+    height: 2px;
+    background-color: #393939;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.block svg {
+    fill: #393939;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.block__item {
+    height: 90px;
+    width: 80px;
+}
+
+.h3 {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.article-wrap {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+#intro {
+    min-height: 100vh;
+    background-image: url(img/bg-intro.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro__h1 {
+    font-weight: bold;
+    font-size: 54px;
+    letter-spacing: 0.160em;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 600px;
+    text-align: center;
+}
+
+.intro__subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 600px;
+    text-align: center;
+}
+
+.intro-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.scroll {
+    width: 23px;
+    height: 37px;
+    position: absolute;
+    bottom: 50px;
+}
+
+#about {
+    min-height: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white{
+    border-color: white;
+    color: white;
+}
+
+.white::before{
+    background-color: white;
+}
+
+.white::after{
+    background-color: white;
+}
+
+
+
+#service {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/services-bg.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-col{
+    object-fit: cover;
+    height: 235px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.img-text{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.16em;
+    color: white;
+    font-weight: bold;
+}
+
+#contact{
+    min-height: 465px;
+    padding-top: 135px;
+}
+
+article{
+    margin-top: 25px;
+}
+
+.main-btn{
+    height: 55px;
+    width: 395px;
+    background-color: #393939;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.16em;
+    color: white;
+    margin: 40px auto;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.main-btn:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,1);;
+}
+
+.copyright-wrap > svg {
+    width: 35px;
+    height: 37px;
+}
+
+.copyright-wrap{
+    display: flex;
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px auto;
+    padding: 15px;
+
+}
+
+.copyright-text{
+    font-weight: normal;
+    font-size: 14px;
+    color: #3c3c3c;
+}
+
+
+@media screen and (max-width: 621px) {
+    .wrap::before,.wrap::after {
+        width: 15%;
+    }
+
+    .main-btn{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .wrap::before,.wrap::after {
+        width: 7%;
+    }
+}
